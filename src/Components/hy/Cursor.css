@@ -1,0 +1,8 @@
+#cursor {
+    position: fixed;
+    width: 20px; 
+    height: 20px; 
+    background-color: #fbbf24;
+    border-radius: 50%; 
+  }
+  

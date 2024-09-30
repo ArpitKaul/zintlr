@@ -1,0 +1,90 @@
+/* Home.css */
+.home-container {
+    background-color: #102533; 
+    height: 36rem; 
+    display: flex;
+  }
+  
+  .header-text {
+    margin-left: 2.5rem; 
+  }
+  
+  .header-title {
+    font-size: 3.75rem; 
+    color: white;
+    padding-top: 4rem; 
+  }
+  
+  .header-highlight {
+    color: #fbbf24; 
+    margin-top: 0.75rem;
+  }
+  
+  .header-paragraph {
+    font-size: 1rem; 
+    color: white;
+    margin-top: 1.25rem; 
+  }
+  
+  .input-container {
+    display: flex;
+    margin-left: 2.5rem;
+    margin-top: 4rem; 
+  }
+  
+  .input-email {
+    background-color: #1a202c; 
+    color: white;
+    height: 2.5rem; 
+    width: 20rem; 
+    padding-left: 1rem; 
+    border-radius: 0.75rem; 
+    border: none;
+  }
+  
+  .start-button {
+    background-color: #fbbf24;
+    color: black;
+    height: 2.5rem; 
+    width: 7rem; 
+    border-radius: 0.75rem; 
+  }
+  
+  .demo-button {
+    margin-left: 1rem; 
+    background-color: transparent; 
+    color: #fbbf24; 
+    border: 0;
+    outline: 0;
+    height: 2.5rem; 
+    width: 7rem; 
+    border-radius: 0.75rem; 
+  }
+  
+  .demo-button:hover {
+    background-color: #fbbf24; 
+    color: black; 
+  }
+  
+  .footer-text {
+    color: #a0aec0; 
+    margin-left: 2.75rem; 
+  }
+  
+  .footer-image {
+    margin-left: 2.5rem; 
+    margin-top: 0.5rem; 
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    margin-left: 6rem; 
+  }
+  
+  .image {
+    width: 45rem; 
+    height: 25rem; 
+    border-radius: 0.75rem; 
+  }
+  

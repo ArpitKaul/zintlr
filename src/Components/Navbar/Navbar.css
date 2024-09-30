@@ -1,0 +1,74 @@
+/* Navbar.css */
+.navbar-container {
+    background-color: #1c3c4c; 
+    height: 6rem; 
+  }
+  
+  .navbar-content {
+    display: flex;
+  }
+  
+  .navbar-logo {
+    margin-left: 2rem; 
+    margin-top: 0.75rem; 
+    border-radius: 9999px; 
+  }
+  
+  .navbar-title {
+    color: #ebc98c; 
+    margin-top: 1.5rem; 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-left: 0.25rem; 
+    cursor: pointer;
+  }
+  .xh1:hover{
+    color:white ;
+  }
+  
+  .navbar-list {
+    display: flex;
+    color: white;
+    width: fit-content;
+    margin-top: 1.5rem; 
+    font-size: 1.125rem; 
+  }
+  .navbar-list li:hover{
+    color: #ebc98c;
+  } 
+  .navbar-item {
+    cursor: pointer;
+    margin-left: 4rem; 
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    margin-left: auto;
+    font-size: 0.9375rem; 
+    align-items: center;
+    margin-right: 2rem; 
+  }
+  
+  .navbar-button-login {
+    cursor: pointer;
+    color: #ebc98c; 
+    transition: background-color 0.3s;
+    width: 5rem;
+    height: 2rem; 
+    border-radius: 0.5rem; 
+  }
+  
+  .navbar-button-login:hover {
+    background-color: #ebc98c;
+    color: black; 
+  }
+  
+  .navbar-button-signup {
+    cursor: pointer;
+    color: black; 
+    background-color: #ebc98c; 
+    border-radius: 0.5rem; 
+    width: 5rem; 
+    height: 2rem; 
+  }
+  
