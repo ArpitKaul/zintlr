@@ -13,6 +13,8 @@ const Cursor = () => {
       gsap.to(cursor, {
         x: e.clientX,
         y: e.clientY,
+        ease:"back.out",
+        duration:1
       });
     };
 

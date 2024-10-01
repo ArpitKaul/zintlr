@@ -1,9 +1,8 @@
 /* Navbar.css */
 .navbar-container {
-    background-color: #1c3c4c; 
+    background-color: #04080f; 
     height: 6rem; 
   }
-  
   .navbar-content {
     display: flex;
   }
@@ -34,7 +33,7 @@
     font-size: 1.125rem; 
   }
   .navbar-list li:hover{
-    color: #ebc98c;
+    color: #fbbf24;
   } 
   .navbar-item {
     cursor: pointer;
@@ -52,23 +51,27 @@
   .navbar-button-login {
     cursor: pointer;
     color: #ebc98c; 
+    border: 2px solid #ebc98c;
     transition: background-color 0.3s;
     width: 5rem;
     height: 2rem; 
     border-radius: 0.5rem; 
+    margin-right: 1rem;
   }
   
   .navbar-button-login:hover {
     background-color: #ebc98c;
     color: black; 
+    border: #ebc98c;
   }
   
   .navbar-button-signup {
     cursor: pointer;
     color: black; 
     background-color: #ebc98c; 
+
     border-radius: 0.5rem; 
-    width: 5rem; 
+    width: 8rem; 
     height: 2rem; 
   }
   

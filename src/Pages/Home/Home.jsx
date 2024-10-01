@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import Navbar from '../../Components/Navbar/Navbar';
 import './Home.css'; 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -21,7 +20,6 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />
       <div className="home-container">
         
         <div>
