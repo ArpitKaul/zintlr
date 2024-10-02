@@ -1,4 +1,4 @@
-.main{
+/* .main{
     background-color: #0d1d29;
     width: 100%;
     height: 36rem;
@@ -44,9 +44,9 @@
     border-radius: 10px;
     margin-left: 5rem;
     height: 30px;
-}
+} */
 #move{
-    background-color: #fbbf24;
+    background-color: plum;
     display: flex;
     overflow: hidden;
     margin-top: 4rem;
@@ -54,7 +54,7 @@
 .marque h1{
     font-size: 4vw;
     color: black;
-    font-family: sans-serif;
+    font-style: oblique;
 }
 .marque{
     display: flex;
@@ -67,8 +67,131 @@
 .marque img{
     height: 4vw;
 }
-.zintlr{
+/* .zintlr{
     background-color: #f0f7ff;
-    height: 44rem;
+    height: 35rem;
     margin-top: 2rem;
+    display: flex;
 }
+.about1{
+    margin-left: 20rem;
+    margin-top: 2vw;
+}
+.about1 h1{
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: normal;
+}
+.about1 p{
+    font-size: 1rem;
+    color: gray;
+    margin-top: 10px;
+}
+.image1 img{
+    margin-left: 3px;
+    margin-top: 2px;
+}
+.minds{
+    display: flex;
+    justify-content: center;
+    background-color: #f0f7ff;
+    height: 10rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+.minds h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: oblique;
+}
+.mind2{
+    display: flex;
+    align-items: center;
+}
+.image2 img{
+    border-radius: 10%;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+.theteam h1{
+    font-size: 2rem;
+    margin-left: 10rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.theteam p{
+    font-size: 1.5rem;
+    color: gray;
+    margin-left: 10vw;
+}
+.box{
+    display: flex;
+    margin-top: 10rem;   
+}
+.box1{
+    height: 250px;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 0px 15px 0px black;
+    padding: 30px;
+    margin-left: 3vw;
+    
+}
+.box1 img{
+    padding-top: 1rem;
+}
+.box1 h1{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.box1 p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: gray;  
+}
+.box2{
+    height: 250px;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 30px;
+    margin-left: 10rem;
+}
+.box2 h1{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.box2 p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: gray;  
+}
+.boxx{
+    display: flex;
+    margin-top: 3vw;
+}
+.boxx1{
+    height: 250px;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 60px;
+    margin-left: 3vw;
+}
+.boxx2{
+    height: 250px;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 0px 15px 0px black;
+    padding: 60px;
+    margin-left: 10rem;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+ */
