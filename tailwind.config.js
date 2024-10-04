@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      borderRadius:{
+        extraLarge: '12rem'   
+      },
        colors: {
         customGray: '#1c3c4c',
         yellow: '#ebc98c',

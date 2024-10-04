@@ -1,7 +1,6 @@
-// Cursor.jsx
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import './Cursor.css'; // Import your cursor styles
+import './Cursor.css'; 
 
 const Cursor = () => {
   const cursorRef = useRef();
@@ -17,10 +16,8 @@ const Cursor = () => {
         duration:1
       });
     };
-
     document.addEventListener("mousemove", handleMouseMove);
 
-    // Cleanup
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };

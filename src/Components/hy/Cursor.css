@@ -3,9 +3,6 @@
     width: 25px; 
     height: 25px; 
     background-color: #fbbf24;
-    transition: transform .2s ease;
-    transform-origin: center center;
-    pointer-events: none;
     z-index: 1000;
     border-radius: 50%; 
   }
