@@ -9,11 +9,10 @@ const Navbar = () => {
       <div className="navbar-content">
         <div className="flex">
           <img
-            className="navbar-logo"
-            src="https://i.tracxn.com/logo/company/Screenshot_2023-05-11_105325_2278b7e2-26a5-40d9-bd24-a3fd59659976.png?height=&width=60"
+            className="navbar-logo w-32 mt-5 cursor-pointer"
+            src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2FL-Z-Logo_D_Z67EOaNx.png%3Ftr%3Doptimized&w=256&q=75"
             alt=""
           />
-          <h1 className="navbar-title">Zintlr</h1>
         </div>
         <ul className="navbar-list">
           <li className="navbar-item"><Link to='/'>Home</Link></li>

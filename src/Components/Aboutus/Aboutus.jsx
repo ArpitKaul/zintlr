@@ -143,7 +143,7 @@ const Aboutus = () => {
 
   return (
     <div>
-      <div className="bg-[#0d1d29] md:w-full w-[68rem] md:h-[35rem] h-2/3 ">
+      <div className="bg-[#0d1d29] md:w-[96rem] w-[68rem] md:h-[35rem] h-2/3 ">
         <div className="md:flex">
           <div className="flex flex-col ml-[15rem]">
             <div className="flex space-x-4 md:mt-40 ml-20 mt-72 ">
@@ -217,11 +217,11 @@ const Aboutus = () => {
           <img
             src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fzintlr_team_s4h1QaOHK.jpg%3Ftr%3Doptimized&w=640&q=75"
             alt=""
-            className=" md:h-96 shadow-custom ml-4 cursor-pointer md:rounded-tl-extraLarge md:rounded-br-extraLarge hover:scale-105 transition-transform duration-300 rounded-3xl h-96 max-w-max"
+            className=" md:h-96 shadow-custom ml-4 cursor-pointer md:rounded-tl-extraLarge md:rounded-br-extraLarge hover:scale-105 transition-transform duration-300 rounded-3xl h-96 max-w-max md:ml-10"
             
           />
         </div>
-        <div className="md:ml-16 ml-5 md:w-1/3 w-96">
+        <div className="md:ml-48 ml-5 md:w-1/3 w-96 ">
           <h1 className="md:text-4xl font-bold font-serif text-6xl">The Team</h1>
           <p className="text-gray-500 mt-3 md:text-2xl text-6xl ">
           Zintlr was founded with the mission of transforming the way businesses connect with their customers. Our team is a diverse group of passionate individuals united by a common goal: to create the  most powerful sales intelligence tool on the market.  By providing our users with the best data and  insights, we empower them to build stronger  relationships, close more deals, and achieve their business objectives
