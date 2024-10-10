@@ -1,51 +1,26 @@
-import React, { useRef } from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import Pitch from '../pitch/Pitch';
+import React from 'react'
 
-const Home = () => {
-  const gsapRef = useRef();
-
-  useGSAP(() => {
-    gsap.from(gsapRef.current, {
-      duration: 0.8,
-      opacity: 0,
-      scale: 0,
-      y: 80,
-      transformOrigin: "0 50% 0",
-      ease: "back",
-      stagger: 1
-    });
-  });
-
+const Pitch = () => {
   return (
     <div>
-      <div className="bg-[#0e1525] h-[36rem] flex">
-        <div>
-          <div className="ml-10">
-            <h6 className="text-6xl text-white pt-16" ref={gsapRef}>Prospect Smarter!</h6>
-            <h6 className="text-[#fbbf24] mt-3 text-5xl">10x Your Conversion!</h6>
-            <p className="text-base text-white mt-5">
-              Unlock the power of <span className="text-[#fbbf24]">Personality intel</span> alongside a rich <span className="text-[#fbbf24]"><br />B2B database</span>
-            </p>
-          </div>
-          <div className="flex ml-10 mt-16">
-            <input className="bg-[#1a202c] text-white h-10 w-80 pl-4 rounded-lg border-none" type="email" placeholder="Enter your email" />
-            <button className="bg-[#fbbf24] text-black h-10 w-28 rounded-lg ml-2">Start for free</button>
-            <button className="ml-4 bg-transparent text-[#fbbf24] border-0 outline-0 h-10 w-28 rounded-lg hover:bg-[#fbbf24] hover:text-black">Book a Demo</button>
-          </div>
-          <div className="mt-1">
-            <p className="text-[#a0aec0] ml-11">No credit card Required</p>
-          </div>
-          <div>
-            <img className="ml-10 mt-2" src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fhp%2FProductHuntFirstLogo_aYBrOgLO-.png%3Ftr%3Doptimized&w=384&q=75" alt="" />
-          </div>
+      <div className='flex'>
+      <div>
+       <div className='flex bg-blue-50 w-64  rounded-3xl h-10 mt-10 ml-16'>
+       <div className='bg-black w-16 h-6 rounded-lg ml-6 mt-2 '>
+          <h1 className='text-white text-sm ml-3'>New</h1>
         </div>
-      </div>
-      <div className='text-center mt-16 '>
-        <h1 className='text-4xl font-bold font-serif'>Precise Phone Numbers. Promising Possibilities</h1>
-        <p className='text-xl font-serif '>Find Accurate Phone Numbers of your Target Audience with Advanced Filters</p>
-        <img className='ml-96' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2FIndia_i8RzDrOIH.png%3FupdatedAt%3D1726752154807%3Ftr%3Doptimized&w=750&q=75" alt="" />
+       <div className='' >
+          <h1 className='ml-2 mt-2 text-gray-600 font-semibold'>Cutting Edge Stuff</h1>
+        </div>
+       </div>
+       <div>
+        <h1 className='text-blue-600 font-bold text-4xl '>Do More than Just a sales pitch</h1>
+        <p className='text-3xl font-semibold font-serif '>Understand personality of your prospects globally and personalize your pitch to a default win </p>
+       </div>
+       </div>
+       <div>
+        <img src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fpersonality_hHm8XQCyf3.png%3Ftr%3Doptimized&w=1080&q=75" alt="" />
+       </div>
       </div>
       <div >
         <div className=" border-2 border-blue-600 rounded-xl mt-16 h-32 flex w-[38rem]">
@@ -104,12 +79,10 @@ const Home = () => {
         </div>
         </div>
       </div>
-      <div className=' flex justify-center'>
-        <img src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fdirection_zJ6ULSWI7.png%3Ftr%3Doptimized&w=384&q=75" alt="" />
+      <div>
+        <h1>Book a demo with us !</h1>
       </div>
-      <Pitch/>
     </div>
-  );
-};
-
-export default Home;
+  )
+}
+export default Pitch
