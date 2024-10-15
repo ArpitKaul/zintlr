@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="bg-[#123456] h-24 w-[27rem] md:w-[96rem]">
       {/* Sidebar only visible on small screens */}
-      <div className="hidden flex">
+      <div className="md:hidden flex">
         <Sidebar />
         <img className='w-8 h-8 mt-6 ml-60 ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66cmvUPqMyIFTMjtkUKSHb8pbTTvct4kZNg&s" alt="" /> 
       </div>
