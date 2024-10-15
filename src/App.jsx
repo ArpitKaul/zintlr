@@ -3,13 +3,14 @@ import Cursor from './Components/cursor/Cursor';
 import Home from './Pages/Home/Home';
 import Aboutus from './Components/Aboutus/Aboutus';
 import Navbar from './Components/Navbar/Navbar';
-import Pitch from './Pages/pitch/Pitch';
+import Clndr from './Components/Calendar/Clndr';
 
 function App() {
   return (
     <>
       <div>
         <BrowserRouter>
+        <Clndr/>
           <Navbar />
           <Cursor /> 
           <Routes>
