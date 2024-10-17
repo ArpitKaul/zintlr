@@ -1,4 +1,5 @@
 import React from 'react'
+import Calendar from 'react-calendar'
 
 const Pitch = () => {
   return (
@@ -55,8 +56,8 @@ const Pitch = () => {
         </div>
       </div>
       <div className='absolute top-[193rem] -z-20 bg-pink-100 md:h-[58rem] w-screen h-[73rem] '></div>
-      <div className=" border-2 border-red-600 rounded-xl mt-[30rem]  md:flex md:w-3/4 md:h-[36rem] md:ml-56 ml-3 bg-white w-[25rem] h-[55rem] md:mt-[34rem]">
-      <div className='md:ml-16 md:mt-10 ml-5 mt-5'>
+      <div className=" border-2 border-red-600 rounded-xl mt-[34rem]  md:flex md:w-3/4 md:h-[36rem] md:ml-56 ml-4 bg-white w-[25rem] h-[55rem] md:mt-[34rem] ">
+      <div className='md:ml-16 md:mt-10 ml-5 '>
         <h1 className='font-bold md:text-5xl text-2xl'>zPersonality</h1>
         <p className='text-blue-600 font-semibold md:text-2xl mt-3'>Foster everlasting connection with anyone on <br />the first call</p>
         <div className='w-80  text-blue-600 md:mt-3 md:ml-16 md:flex md:flex-col mt-12 flex'>
@@ -90,24 +91,44 @@ const Pitch = () => {
        </div>
         
       </div>
-      <div className=' mt-60 bg-blue-100 md:h-[38rem] md:mt-32 h-12  '>
+      <div className=' mt-60 bg-blue-100 md:h-[38rem] md:mt-28 h-[48rem]  '>
         <div className='flex justify-center'>
         <h1 className='md:text-5xl font-bold font-serif text-3xl mt-1 '>Book a demo with us !</h1>
         </div>
-      </div>
-        <div className='bg-white  h-96  md:ml-96 flex mt-16 '>
+        <div className='bg-white md:w-[55rem] md:ml-96 md:flex mt-16 w-96 ml-7 h-[40rem] md:h-96'>
           <div>
-          <img className='w-40 ml-32 ' src="https://d3v0px0pttie1i.cloudfront.net/uploads/user/logo/17854248/7c4cec75.png" alt="" />
-          <p>Zintlr Team</p>
-          <h1>30 Minute Meeting</h1>
-          <p>30 min</p>
-          <p>Web conferencing details provided upon <br /> confirmation.</p>
+          <img className='md:w-40 md:ml-32 w-16 ml-32 ' src="https://d3v0px0pttie1i.cloudfront.net/uploads/user/logo/17854248/7c4cec75.png" alt="" />
+         <div className='ml-10'>
+         <p className='md:text-xl mt-8 text-sm ml-24  '>Zintlr Team</p>
+          <h1 className='font-bold text-3xl '>30 Minute Meeting</h1>
+          <p className='mt-7 font-serif'>30 min</p>
+          <p className='mt-3 font-serif'>Web conferencing details provided upon<br /> confirmation.</p>
+         </div>
           </div>
-          <div className='b'>
-            <h1>calender</h1>
+          <div className='md:ml-48 md:mr-5 mt-12 ml-4'>
+            <h1 className='ml-32 mb-1 text-2xl font-serif font-semibold '>Select a Day </h1>
+            < Calendar/>
           </div>
         </div>
-      
+      </div>
+      <div className='bg-yellow h-[35rem] p-5'>
+        <div className='bg-white md:w-[85rem] h-[30rem] md:ml-16 rounded-xl bottom-3 mt-8  '>
+          <h1 className='font-bold text-serif md:text-5xl  pt-5 md:ml-20 ml-10 text-xl'>Be among the first to experience the <span className='ml-20 md:ml-0'>power of Zintlr</span>  </h1>
+          <p className='md:ml-48 md:text-4xl mt-3 text-[10px] text-blue-700 ml-16' >Join the waitlist now and get early access to the platform.</p>
+          <div className='flex justify-center'>
+          <button className='md:w-72 h-16 bg-black text-white text-xl mt-5 rounded-xl w-48 font-semibold '>Join the Waitlist</button>
+          </div>
+          <div className='bg-blue-100 md:w-[72rem] h-56 md:ml-24 mt-7 ml-10 w-80 rounded-xl '>
+            <h1 className='md:text-3xl font-bold font-serif md:ml-32 ml-10 text-sm pt-10'>We appreciate your time on our website. Please accept
+          this handbook as a token of our thanks</h1>
+          <p className='md:ml-72 md:text-lg text-[10px] ml-6 mt-1'>Kindly provide your email address where we can send the <span className='ml-28 md:ml-0'>handbook.</span> </p>
+          <div>
+            <button className='md:w-56 h-10 bg-blue-600 text-white md:text-xl mt-5 rounded-xl w-48 font-semibold md:ml-[30rem] ml-16'>Download Handbook</button>
+          </div>
+        </div>
+        </div>
+        
+      </div>
     </div>
   )
 }

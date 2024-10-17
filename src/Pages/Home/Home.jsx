@@ -8,8 +8,8 @@ const Home = () => {
 
   return (
     <div className='md:w-screen'>
-      <div className="bg-[#0e1525] h-[36rem] flex w-[27rem] md:w-screen ">
-        <div>
+      <div className="bg-[#0e1525] h-[36rem] md:flex w-[27rem] md:w-screen ">
+        <div className=''>
           <div className="ml-10">
             <h6 className="text-3xl text-white pt-16 " >Prospect Smarter!</h6>
             <h6 className="text-[#fbbf24] mt-3 text-2xl">10x Your Conversion!</h6>
@@ -28,6 +28,9 @@ const Home = () => {
           <div>
             <img className="ml-10 mt-2" src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fhp%2FProductHuntFirstLogo_aYBrOgLO-.png%3Ftr%3Doptimized&w=384&q=75" alt="" />
           </div>
+        </div>
+        <div>
+          <img className=' hidden md:block ml-44 mt-16 ' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fcmp%2Fcompanyoverview-100_H3k9nY9MST.webp%3Ftr%3Doptimized&w=640&q=75" alt="" />
         </div>
       </div>
       {/* globe image */}
@@ -70,7 +73,7 @@ const Home = () => {
         </div>
       </div>
       <div className='absolute top-[76rem] -z-20 md:bg-gray-100 h-[78rem] md:w-screen '></div>
-      <div className=" border-2 border-red-600 rounded-xl mt-60 bg-white md:flex md:w-3/4 h-[55rem] md:ml-56 ml-7 w-96 md:h-[45rem]">
+      <div className=" border-2 border-red-600 rounded-xl md:mt-60 bg-white md:flex md:w-3/4 h-[55rem] md:ml-56 ml-7 w-96 md:h-[45rem] mt-32">
         <div className='md:ml-32 mt-10 ml-5'>
         <h1 className='font-bold md:text-4xl text-xl'>Indian Data Suite</h1>
         <p className='text-blue-600 font-semibold md:text-2xl mt-3'>Unlock contacts, revenue and intel about any  <br />Indian companies instantly.</p>

@@ -23,7 +23,7 @@ const Cursor = () => {
     };
   }, []);
 
-  return <div id="cursor" ref={cursorRef} className="custom-cursor hidden"></div>;
+  return <div id="cursor" ref={cursorRef} className="custom-cursor hidden md:block"></div>;
 };
 
 export default Cursor;

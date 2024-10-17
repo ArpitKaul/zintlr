@@ -1,9 +1,12 @@
 
-#move{
+.move{
     background-color: plum;
-    display: flex;
+    /* display: flex; */
     overflow: hidden;
     margin-top: 4rem;
+    background-color: #ebc98c;
+    height: 9vw;
+
 }
 .marque h1{
     font-size: 4vw;
@@ -11,7 +14,7 @@
     font-style: oblique;
 }
 .marque{
-    display: flex;
+    display: flex; 
     align-items: center;
     gap: 3rem;
     padding: 0 1.5vw;

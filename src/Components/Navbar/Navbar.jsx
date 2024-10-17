@@ -1,45 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 
 const Navbar = () => {
-  return (
-    <div className="bg-[#123456] h-24 w-[27rem] md:w-[96rem]">
-      {/* Sidebar only visible on small screens */}
-      <div className="md:hidden flex">
-        <Sidebar />
-        <img className='w-8 h-8 mt-6 ml-60 ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66cmvUPqMyIFTMjtkUKSHb8pbTTvct4kZNg&s" alt="" /> 
-      </div>
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-      {/* Navbar only visible on medium screens and larger */}
-      <div className="hidden md:flex">
-        <div className="flex">
-       
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+  return (
+    <div>
+      {/* Navbar for medium and larger screens */}
+      <div className="bg-[#0e1526] h-24 w-full hidden md:flex items-center justify-between ">
+        <div className="flex items-center">
           <img
-            className="w-32 mt-5 cursor-pointer rounded-full ml-8"
+            className="w-32 ml-8 cursor-pointer rounded-full"
             src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2FL-Z-Logo_D_Z67EOaNx.png%3Ftr%3Doptimized&w=256&q=75"
             alt="Logo"
           />
+          <ul className="flex text-white ml-10 space-x-16">
+            <li className="cursor-pointer hover:text-yellow-500">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="cursor-pointer hover:text-yellow-500">
+              <Link to="/Aboutus">About us</Link>
+            </li>
+            <li className="cursor-pointer hover:text-yellow-500">Contact us</li>
+            <li className="cursor-pointer hover:text-yellow-500">Our Data</li>
+          </ul>
         </div>
-        <ul className="flex text-white mt-6 text-lg ml-1">
-          <li className="ml-16 cursor-pointer hover:text-yellow-500">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="ml-16 cursor-pointer hover:text-yellow-500">
-            <Link to="/Aboutus">About us</Link>
-          </li>
-          <li className="ml-16 cursor-pointer hover:text-yellow-500">Contact us</li>
-          <li className="ml-16 cursor-pointer hover:text-yellow-500">Our Data</li>
-        </ul>
-        <div className="flex items-center ml-auto mr-8 text-sm">
-          <button className="cursor-pointer text-[#ebc98c] border-2 border-[#ebc98c] transition-all duration-300 w-20 h-8 rounded-md mr-4 hover:bg-[#ebc98c] hover:text-black">
+        <div className="flex items-center mr-8">
+          <button className="text-[#ebc98c] border-2 border-[#ebc98c] transition-all duration-300 w-20 h-8 rounded-md mr-4 hover:bg-[#ebc98c] hover:text-black">
             Login
           </button>
-          <button className="cursor-pointer text-black bg-[#ebc98c] w-32 h-8 rounded-md">
+          <button className="bg-[#ebc98c] text-black w-32 h-8 rounded-md ">
             Join the waitlist
           </button>
         </div>
       </div>
+
+      {/* Navbar for small screens */}
+      <div className="md:hidden bg-[#0e1525] h-16 flex items-center justify-between pt-6">
+        <img
+          className="w-20 h-20 cursor-pointer rounded-full ml-4"
+          src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2FL-Z-Logo_D_Z67EOaNx.png%3Ftr%3Doptimized&w=256&q=75"
+          alt="Logo"
+        />
+        <img
+          className="w-8 h-8 mr-4 cursor-pointer"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66cmvUPqMyIFTMjtkUKSHb8pbTTvct4kZNg&s"
+          alt="Menu"
+          onClick={toggleSidebar}
+        />
+      </div>
+
+      {/* Sidebar toggling */}
+      <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
     </div>
   );
 };
