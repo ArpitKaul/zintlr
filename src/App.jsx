@@ -5,6 +5,8 @@ import Aboutus from './Components/Aboutus/Aboutus';
 import Navbar from './Components/Navbar/Navbar';
 import Clndr from './Components/Calendar/Clndr';
 import Footer from './Pages/Footer/Footer';
+import Data from './Pages/OurData/Data';
+import Login from './Pages/Login/Login';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/aboutus' element={<Aboutus />} />
+            <Route path='/Data' element={<Data />} />
+            <Route path='./Login' element={<Login/>}/>
+
           </Routes>
           <Footer/>
         </BrowserRouter>

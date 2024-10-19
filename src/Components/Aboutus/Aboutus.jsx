@@ -5,6 +5,12 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 // import AboutUsAnimations from './AboutUsAnimations';
 gsap.registerPlugin(ScrollTrigger);
 const Aboutus = () => {
+
+ // Scroll to the top when the component is rendered
+  useEffect(() => {
+   
+    window.scrollTo(0, 0);
+  }, []);
   
 
   const marqueesRef = useRef([]);

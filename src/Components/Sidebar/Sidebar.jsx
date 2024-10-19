@@ -42,7 +42,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </Link>
         </li>
         <li>
-          <Link to="/OurData" className="hover:text-yellow-500" onClick={handleLinkClick}>
+          <Link to="/Data" className="hover:text-yellow-500" onClick={handleLinkClick}>
             Our Data
           </Link>
         </li>

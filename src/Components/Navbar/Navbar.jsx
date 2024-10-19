@@ -26,13 +26,16 @@ const Navbar = () => {
             <li className="cursor-pointer hover:text-yellow-500">
               <Link to="/Aboutus">About us</Link>
             </li>
-            <li className="cursor-pointer hover:text-yellow-500">Contact us</li>
-            <li className="cursor-pointer hover:text-yellow-500">Our Data</li>
+            <li className="cursor-pointer hover:text-yellow-500">Contact us
+            </li>
+            <li className="cursor-pointer hover:text-yellow-500">
+            <Link to="/Data">Our Data</Link>
+            </li>
           </ul>
         </div>
         <div className="flex items-center mr-8">
           <button className="text-[#ebc98c] border-2 border-[#ebc98c] transition-all duration-300 w-20 h-8 rounded-md mr-4 hover:bg-[#ebc98c] hover:text-black">
-            Login
+            <Link to='./Login'>Login</Link>
           </button>
           <button className="bg-[#ebc98c] text-black w-32 h-8 rounded-md ">
             Join the waitlist
