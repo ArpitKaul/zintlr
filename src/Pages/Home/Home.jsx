@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <div className='md:w-screen'>
-      <div className="bg-[#0e1525] h-[36rem] md:flex w-[27rem] md:w-screen ">
+      <div className="bg-[#0e1525] h-[36rem] md:flex w-[27rem] md:w-screen pt-16">
         <div className=''>
           <div className="ml-10">
             <h6 className="text-3xl text-white pt-16 " >Prospect Smarter!</h6>

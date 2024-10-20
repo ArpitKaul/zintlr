@@ -4,14 +4,14 @@ import Calendar from 'react-calendar'
 const Pitch = () => {
   return (
     <div>
-      <div className='flex'>
+      <div className='md:flex ml-5'>
       <div>
        <div className='flex bg-blue-50 md:w-64 w-72  rounded-3xl h-10 mt-10 md:ml-32 ml-5'>
        <div className='bg-black md:w-16 h-6 w-12 rounded-lg ml-6 mt-2 '>
           <h1 className='text-white text-sm ml-3'>New</h1>
         </div>
        <div className='' >
-          <h1 className='ml-2 mt-2 text-gray-600 font-semibold'>Cutting Edge Stuff</h1>
+          <h1 className='ml-3 mt-2 text-gray-600 font-semibold'>Cutting Edge Stuff</h1>
         </div>
        </div>
        <div className='-z-50  absolute md:w-[670px] md:ml-32 '>
@@ -19,11 +19,11 @@ const Pitch = () => {
         <p className='md:text-2xl font-semibold font-serif mt-2 '>Understand personality of your prospects globally and personalize your pitch to a default win </p>
        </div>
        </div>
-       <div className='ml-48 mt-16'>
-        <img className='md:w-[50rem] md:h-[40rem] w-32 h '  src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fpersonality_hHm8XQCyf3.png%3Ftr%3Doptimized&w=1080&q=75" alt="" />
+       <div className='md:ml-48 mt-28 ml-5'>
+        <img className='md:w-[50rem] md:h-[40rem] w-[20rem] h-[20rem] '  src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fpersonality_hHm8XQCyf3.png%3Ftr%3Doptimized&w=1080&q=75" alt="" />
        </div>
       </div>
-      <div className='absolute top-[213rem] left-[21.5rem] w-auto hidden md:block' >
+      <div className='absolute top-[197rem] left-[21.5rem] w-auto hidden md:block' >
         <div className=" border-2 border-blue-600 rounded-xl mt-16 h-32 flex w-[38rem]  bg-white ">
           <div>
           <h1 className='ml-16 text-blue-600 font-bold mt-4 font-serif text-xl'>Curated database</h1>
@@ -56,8 +56,8 @@ const Pitch = () => {
         </div>
       </div>
       <div className='absolute top-[193rem] -z-20 bg-pink-100 md:h-[58rem] w-screen h-[73rem] '></div>
-      <div className=" border-2 border-red-600 rounded-xl mt-[34rem]  md:flex md:w-3/4 md:h-[36rem] md:ml-56 ml-4 bg-white w-[25rem] h-[55rem] md:mt-[34rem] ">
-      <div className='md:ml-16 md:mt-10 ml-5 '>
+      <div className=" border-2 border-red-600 rounded-xl mt-[15rem]  md:flex md:w-3/4 md:h-[36rem] md:ml-56 ml-4 bg-white w-[25rem] h-[55rem] md:mt-[34rem] ">
+      <div className='md:ml-16 md:mt-10  ml-5 '>
         <h1 className='font-bold md:text-5xl text-2xl'>zPersonality</h1>
         <p className='text-blue-600 font-semibold md:text-2xl mt-3'>Foster everlasting connection with anyone on <br />the first call</p>
         <div className='w-80  text-blue-600 md:mt-3 md:ml-16 md:flex md:flex-col mt-12 flex'>

@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar for medium and larger screens */}
-      <div className="bg-[#0e1526] h-24 w-full hidden md:flex items-center justify-between ">
+      <div className="bg-[#0e1526] h-24 w-full hidden md:flex items-center justify-between fixed z-50">
         <div className="flex items-center">
           <img
             className="w-32 ml-8 cursor-pointer rounded-full"
@@ -26,7 +26,8 @@ const Navbar = () => {
             <li className="cursor-pointer hover:text-yellow-500">
               <Link to="/Aboutus">About us</Link>
             </li>
-            <li className="cursor-pointer hover:text-yellow-500">Contact us
+            <li className="cursor-pointer hover:text-yellow-500">
+              <Link to='/Contact'>Contact Us</Link>
             </li>
             <li className="cursor-pointer hover:text-yellow-500">
             <Link to="/Data">Our Data</Link>

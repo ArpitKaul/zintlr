@@ -7,6 +7,7 @@ import Clndr from './Components/Calendar/Clndr';
 import Footer from './Pages/Footer/Footer';
 import Data from './Pages/OurData/Data';
 import Login from './Pages/Login/Login';
+import Contact from './Pages/Contact/Contact';
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/aboutus' element={<Aboutus />} />
             <Route path='/Data' element={<Data />} />
-            <Route path='./Login' element={<Login/>}/>
-
+            <Route path='/Login' element={<Login/>}/>
+            <Route path='/Contact' element={<Contact/>}/>
           </Routes>
           <Footer/>
         </BrowserRouter>
