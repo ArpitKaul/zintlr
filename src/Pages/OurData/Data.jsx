@@ -1,7 +1,12 @@
 import React from 'react'
 import './Data.css'
+import { useEffect } from 'react'
 import FAQ from './Faq'
 const Data = () => {
+  useEffect(() => {
+   
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
 

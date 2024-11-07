@@ -32,14 +32,14 @@ const Footer = () => {
       <div className='flex'>
       <div className="md:flex flex-col space-y-4 mt-7 md:ml-0 ml-20">
         <h1 className="font-bold text-yellow text-2xl">Company</h1>
-        <p>Our Data</p>
+        <Link to='/Data'>Our Data</Link>
         <Link to='/Aboutus'>About us</Link>
       </div>
 
       {/* Right Section: Resources Links */}
       <div className="flex flex-col space-y-4 mt-7 ml-8">
         <h1 className="font-bold text-yellow text-2xl">Resources</h1>
-        <p>Contact us</p>
+        <Link className='cursor-pointer' to='/Contact'>Contact Us</Link>
       </div>
       </div>
 

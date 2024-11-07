@@ -1,14 +1,16 @@
-import React, { useRef } from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import React, { useEffect } from 'react';
 import Pitch from '../pitch/Pitch';
 
 const Home = () => {
- 
+
+  useEffect(() => {
+   
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className='md:w-screen'>
-      <div className="bg-[#0e1525] h-[36rem] md:flex w-[27rem] md:w-screen pt-16">
+      <div  className="bg-[#0d1d29] h-[36rem] md:flex w-[27rem] md:w-screen pt-16">
         <div className=''>
           <div className="ml-10">
             <h6 className="text-3xl text-white pt-16 " >Prospect Smarter!</h6>

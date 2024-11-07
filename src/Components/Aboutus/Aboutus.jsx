@@ -1,9 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
 import './Aboutus.css'
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
-// import AboutUsAnimations from './AboutUsAnimations';
-gsap.registerPlugin(ScrollTrigger);
 const Aboutus = () => {
 
  // Scroll to the top when the component is rendered
@@ -13,19 +9,10 @@ const Aboutus = () => {
   }, []);
   
 
-  const marqueesRef = useRef([]);
-  const gsapRef = useRef()
-  const teamRef = useRef();
-  
-
   return (
     <div>
-      {/* <AboutUsAnimations 
-        marqueesRef={marqueesRef} 
-        teamRef={teamRef} 
-        gsapRef={gsapRef} 
-      /> */}
-      <div className="bg-[#0d1d29] md:w-[96rem] md:h-[35rem] h-[55rem] w-[27rem] ">
+      
+      <div className="bg-[#0d1d29] md:w-[96rem] md:h-[35rem] h-[55rem] w-[27rem] md:pt-16 ">
         <div className="md:flex">
           <div className="flex flex-col ml-10">
             <div className="flex space-x-4 md:mt-40 ml-20 mt-48 ">
@@ -51,28 +38,7 @@ const Aboutus = () => {
           </div>
         </div>
       </div>
-      <div  className='hidden md:block move' >
-    <div className="marque"  ref={(el) => marqueesRef.current[0] = el}>
-        <h1 className='font-serif'>We are Team Zintlr</h1>
-        <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="" />
-    </div>
-    <div className="marque" ref={(el) => marqueesRef.current[1] = el}>
-        <h1 className='font-serif' >We are Team Zintlr</h1>
-        <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="" />
-    </div>
-    <div className="marque"  ref={(el) => marqueesRef.current[2] = el}>
-        <h1 className='font-serif'>We are Team Zintlr</h1>
-        <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="" />
-    </div>
-    <div className="marque"  ref={(el) => marqueesRef.current[3] = el}>
-        <h1 className='font-serif'>We are Team Zintlr</h1>
-        <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="" />
-    </div>
-    <div className="marque"  ref={(el) => marqueesRef.current[4] = el}>
-        <h1 className='font-serif'>We are Team Zintlr</h1>
-        <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="" />
-    </div>
-   </div>
+      
       <div className="md:flex  md:h-[35rem] h-[50rem]   w-[27rem] md:w-[96rem]">
        
         <div className="md:ml-56  md:mt-8 mt-[5rem] w-[27rem] md:w-[35rem]">
@@ -92,8 +58,8 @@ const Aboutus = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center items-center bg-[#f0f7ff] md:h-40 mt-72 md:mt-[5rem] w-[27rem] md:w-[96rem] h-48  " ref={gsapRef}>
-        <h1 className="text-2xl font-bold font-serif "   >The minds behind Zintlr</h1>
+      <div className="flex justify-center items-center bg-[#f0f7ff] md:h-40 mt-72 md:mt-[5rem] w-[27rem] md:w-[96rem] h-48  " >
+        <h1 className="text-2xl font-bold font-serif "  >The minds behind Zintlr</h1>
       </div>
       <div className="md:flex md:items-center ">
         <div className="md:ml-5 mt-12 ml-16" >
