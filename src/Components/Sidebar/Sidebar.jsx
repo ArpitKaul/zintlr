@@ -21,7 +21,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7X2XsNu8kb7ZWgjMVsQDZS6B5RLtafWAP7WM8PsQyb2Cp0mK9"
             alt="Close"
-            className="w-16 h-16 cursor-pointer ml-20"
+            className="w-8 h-8 cursor-pointer ml-28"
           />
         </button>
       </div>

@@ -12,7 +12,7 @@ const Aboutus = () => {
   return (
     <div>
       
-      <div className="bg-[#0d1d29] md:w-[96rem] md:h-[35rem] h-[55rem] w-[27rem] md:pt-16 ">
+      <div className="bg-[#0d1d29] md:w-[96rem] md:h-[43rem] h-[55rem] w-[27rem] md:pt-16 ">
         <div className="md:flex">
           <div className="flex flex-col ml-10">
             <div className="flex space-x-4 md:mt-40 ml-20 mt-48 ">
