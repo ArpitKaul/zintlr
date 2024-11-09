@@ -19,7 +19,7 @@ const Pitch = () => {
         <p className='md:text-2xl font-semibold font-serif mt-2 '>Understand personality of your prospects globally and personalize your pitch to a default win </p>
        </div>
        </div>
-       <div className='md:ml-48 mt-28 ml-5'>
+       <div className='md:ml-48 mt-28 ml-7 '>
         <img className='md:w-[50rem] md:h-[40rem] w-[20rem] h-[20rem] '  src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fpersonality_hHm8XQCyf3.png%3Ftr%3Doptimized&w=1080&q=75" alt="" />
        </div>
       </div>
@@ -55,8 +55,8 @@ const Pitch = () => {
         </div>
         </div>
       </div>
-      <div className='absolute top-[193rem] -z-20 bg-pink-100 md:h-[58rem] w-screen h-[73rem] '></div>
-      <div className=" border-2 border-red-600 rounded-xl mt-[15rem]  md:flex md:w-3/4 md:h-[36rem] md:ml-56 ml-4 bg-white w-[25rem] h-[55rem] md:mt-[34rem] ">
+      <div className='absolute top-[193rem] -z-20 bg-pink-100 md:h-[58rem]  h-[73rem] w-screen '></div>
+      <div className=" border-2 border-red-600 rounded-xl mt-[15rem]  md:flex md:w-3/4 md:h-[36rem] md:ml-56 ml-4 bg-white w-[23rem] h-[55rem] md:mt-[34rem] ">
       <div className='md:ml-16 md:mt-10  ml-5 '>
         <h1 className='font-bold md:text-5xl text-2xl'>zPersonality</h1>
         <p className='text-blue-600 font-semibold md:text-2xl mt-3'>Foster everlasting connection with anyone on <br />the first call</p>
@@ -76,8 +76,8 @@ const Pitch = () => {
         </div>
         </div>
        <div>
-       <div className='bg-blue-200 md:h-80 w-96 md:ml-16 md:mt-28 ml-1 rounded-xl mt-5'>
-          <img className='w-72 h-72 pt-3 ml-16 m' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fbuyer_commitee_wmWR5bwjOA.png%3Ftr%3Doptimized&w=640&q=75" alt="" />
+       <div className='bg-blue-200 md:h-80 w-80 md:ml-16 md:mt-28 ml-5 rounded-xl mt-5'>
+          <img className='w-72 h-66 pt-3 ml-5 m' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fbuyer_commitee_wmWR5bwjOA.png%3Ftr%3Doptimized&w=640&q=75" alt="" />
         </div>
        <div className='flex bg-blue-50 md:w-[25rem] w-[24rem]  rounded-3xl h-16 mt-10 md:ml-16 ml-1'>
        <div className='' >

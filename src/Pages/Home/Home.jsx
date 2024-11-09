@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <div className='md:w-screen'>
-      <div  className="bg-[#0d1d29] h-[43rem] md:flex w-[27rem] md:w-screen pt-16 ">
+      <div  className="bg-[#0d1d29] h-[43rem] md:flex  md:w-screen pt-16 sm:w-[27rem] ">
         <div className=''>
           <div className="ml-10">
             <h6 className="text-3xl text-white pt-16 " >Prospect Smarter!</h6>
@@ -28,21 +28,21 @@ const Home = () => {
             <p className="text-[#a0aec0] ml-11">No credit card Required</p>
           </div>
           <div>
-            <img className="ml-10 mt-2" src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fhp%2FProductHuntFirstLogo_aYBrOgLO-.png%3Ftr%3Doptimized&w=384&q=75" alt="" />
+            <img className="sm:ml-10 mt-2 " src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fhp%2FProductHuntFirstLogo_aYBrOgLO-.png%3Ftr%3Doptimized&w=384&q=75" alt="" />
           </div>
         </div>
         <div>
-          <img className=' hidden md:block ml-44 mt-16 ' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fcmp%2Fcompanyoverview-100_H3k9nY9MST.webp%3Ftr%3Doptimized&w=640&q=75" alt="" />
+          <img className=' hidden md:block sm:ml-44 mt-16  ' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fcmp%2Fcompanyoverview-100_H3k9nY9MST.webp%3Ftr%3Doptimized&w=640&q=75" alt="" />
         </div>
       </div>
       {/* globe image */}
-      <div className='text-center mt-16 md:w-screen w-[27rem] '>
+      <div className='text-center mt-16 md:w-screen sm:w-[27rem] '>
         <h1 className='md:text-4xl text-3xl font-bold font-serif'>Precise Phone Numbers. Promising Possibilities</h1>
         <p className='text-xl font-serif mt-7  '>Find Accurate Phone Numbers of your Target Audience with Advanced Filters</p>
-        <img className='md:ml-72 mt-5' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2FIndia_i8RzDrOIH.png%3FupdatedAt%3D1726752154807%3Ftr%3Doptimized&w=750&q=75" alt="" />
+        <img className='md:ml-72 sm:mt-5' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2FIndia_i8RzDrOIH.png%3FupdatedAt%3D1726752154807%3Ftr%3Doptimized&w=750&q=75" alt="" />
       </div>
       {/* /cards */}
-      <div className='absolute top-[70rem] left-[48rem] w-auto hidden md:block'>
+      <div className='sm:absolute sm:top-[70rem] sm:left-[48rem] w-auto hidden md:block'>
         <div className=" border-2 border-blue-600 rounded-xl mt-16 h-32 flex w-[38rem] bg-white">
           <div className='ml-5 border-l-4 border-blue-600 my-5 rounded'>
           <h1 className='ml-16 text-blue-600 font-bold font-serif text-xl'>Curated database</h1>
@@ -75,7 +75,7 @@ const Home = () => {
         </div>
       </div>
       <div className='absolute top-[76rem] -z-20 md:bg-gray-100 h-[78rem] md:w-screen '></div>
-      <div className=" border-2 border-red-600 rounded-xl md:mt-60 bg-white md:flex md:w-3/4 h-[55rem] md:ml-56 ml-7 w-96 md:h-[45rem] mt-32">
+      <div className=" border-2 border-red-600 rounded-xl md:mt-60 bg-white md:flex md:w-3/4 h-[55rem] md:ml-56 sm:ml-7 sm:w-80 md:h-[45rem] mt-32">
         <div className='md:ml-32 mt-10 ml-5'>
         <h1 className='font-bold md:text-4xl text-xl'>Indian Data Suite</h1>
         <p className='text-blue-600 font-semibold md:text-2xl mt-3'>Unlock contacts, revenue and intel about any  <br />Indian companies instantly.</p>
@@ -91,10 +91,10 @@ const Home = () => {
         </div>
         </div>
         <div>
-       <div className='bg-blue-100 md:h-80 md:w-96 w-[23rem] h-60  ml-2 mt-56 md:mt-48  rounded-xl'>
+       <div className='bg-blue-100 md:h-80 md:w-96 w-[20rem] sm:h-60  ml-5 mt-56 md:mt-48  rounded-xl '>
           <img className='md:w-72 md:h-72 pt-3 md:ml-16 ml-16 h-56' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fids1_A1EMKFttn.png%3Ftr%3Doptimized&w=828&q=75" alt="" />
         </div>
-       <div className='flex bg-blue-50 md:w-96  rounded-3xl h-16 mt-10 md:ml-16 w-[23rem]'>
+       <div className='flex bg-blue-50 md:w-96  rounded-3xl h-16 mt-10 md:ml-16 w-[20rem] ml-5'>
        <div className='' >
           <h1 className='md:ml-2 mt-4 text-gray-600 font-semibold text-sm'>Explore access awaits</h1>
         </div>

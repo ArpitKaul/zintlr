@@ -22,10 +22,18 @@ const Footer = () => {
           Unlock the power of lead intelligence and streamline your prospecting process.
         </p>
         <div className=' md:mt-6 flex cursor-pointer mt-10 '>
+          <a href="https://twitter.com/ZintlrHQ">
         <img className='w-9 md:ml-0 ml-24  rounded-xl ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgCeVF_mpx6Wd50ZWOZVn-nrOl-NJ9SYd-A&s" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/company/zintlr/">
         <img className='w-9 ml-3 rounded-xl' src="https://banner2.cleanpng.com/20180619/kyf/aa668hp3e.webp" alt="" />
+          </a>
+          <a href="https://m.facebook.com/100089859531116/">
         <img className='w-9 ml-3 rounded-xl' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43HQpKFjAd-Ka_tLRdM37RKIsJMpEmh7Wgw&s" alt="" />
+          </a>
+          <a href="https://www.instagram.com/zintlrhq/">
         <img className='ml-3 w-9 rounded-xl' src="https://w7.pngwing.com/pngs/877/705/png-transparent-instagram-photo-picture-social-brands-and-logos-icon.png" alt="" />
+          </a>
         </div>
       </div>
       {/* Middle Section: Company Links */}
