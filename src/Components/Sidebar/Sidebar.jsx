@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Popup from '../popup/Popup';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   const handleLinkClick = () => {
-    toggleSidebar();  // Close the sidebar when a link is clicked
+    toggleSidebar(); // Close the sidebar when a link is clicked
+  };
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+    handleLinkClick();
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
   };
 
   return (
+    <>
     <div
       className={`fixed inset-y-0 right-0 bg-gray-800 text-white w-72 py-6 transition-transform duration-300 transform ${
         isOpen ? 'translate-x-0' : 'translate-x-full'
@@ -47,17 +60,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </Link>
         </li>
         <li>
-          <Link to="/Login" className="hover:text-yellow-500 bg-[#ebc98c] text-black   rounded-md" onClick={handleLinkClick}>
+          <Link to="/Login" className="hover:text-yellow-500 bg-[#ebc98c] text-black rounded-md" onClick={handleLinkClick}>
             Login
           </Link>
         </li>
-        <li>
-          <Link to="/Watchlist" className="hover:text-yellow-500 bg-[#ebc98c] text-black rounded-md " onClick={handleLinkClick}>
-            Join Watchlist
-          </Link>
-        </li>
+        <button onClick={openPopup} className="bg-[#ebc98c] text-black w-48 h-8 rounded-md ">
+          Join the waitlist
+        </button>
       </ul>
     </div>
+      <Popup isOpen={isPopupOpen} onClose={closePopup} />
+      </>
   );
 };
 

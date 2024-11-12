@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { HashRouter, Link } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 import Popup from '../popup/Popup';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [menu, setmenu] = useState("Home");
+  const [menu, setmenu] = useState("");
   const [isPopupOpen, setIsPopupOpen] = useState(false); // State for controlling popup visibility
+
+  useEffect(() => {
+    const currentPath = location.pathname.split('/')[1];
+    setmenu(currentPath || "Home"); 
+  }, [location]);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);

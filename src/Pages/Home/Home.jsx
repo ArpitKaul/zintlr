@@ -2,46 +2,43 @@ import React, { useEffect } from 'react';
 import Pitch from '../pitch/Pitch';
 
 const Home = () => {
-
   useEffect(() => {
-   
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className='md:w-screen'>
-      <div  className="bg-[#0d1d29] h-[43rem] md:flex  md:w-screen pt-16 sm:w-[27rem] ">
-        <div className=''>
-          <div className="ml-10">
-            <h6 className="text-3xl text-white pt-16 " >Prospect Smarter!</h6>
+    <div className="w-full">
+      {/* Hero Section */}
+      <div className="bg-[#0d1d29] h-[43rem] flex flex-col lg:flex-row w-full pt-16 px-5 lg:px-0">
+        <div className="flex-1 lg:px-10">
+          <div className="lg:ml-10 text-center lg:text-left">
+            <h6 className="text-3xl text-white pt-16">Prospect Smarter!</h6>
             <h6 className="text-[#fbbf24] mt-3 text-2xl">10x Your Conversion!</h6>
             <p className="text-base text-white mt-5">
-              Unlock the power of <span className="text-[#fbbf24]">Personality intel</span> alongside a rich <span className="text-[#fbbf24]"><br />B2B database</span>
+              Unlock the power of <span className="text-[#fbbf24]">Personality intel</span> alongside a rich <span className="text-[#fbbf24]">B2B database</span>
             </p>
           </div>
-          <div className="md:flex ml-10 mt-16">
-            <input className="bg-[#1a202c] text-white h-10 md:w-80 pl-4 rounded-lg border-none" type="email" placeholder="Enter your email" />
-            <button className="bg-[#fbbf24] text-black h-10 w-28 rounded-lg ml-2">Start for free</button>
-            <button className="ml-4 bg-transparent text-[#fbbf24] border-0 outline-0 h-10 w-28 rounded-lg hover:bg-[#fbbf24] hover:text-black">Book a Demo</button>
+          <div className="flex flex-col lg:flex-row lg:ml-10 mt-10 lg:mt-16 space-y-3 lg:space-y-0">
+            <input className="bg-[#1a202c] text-white h-10 lg:w-80 w-full pl-4 rounded-lg border-none" type="email" placeholder="Enter your email" />
+            <button className="bg-[#fbbf24] text-black h-10 w-full lg:w-28 rounded-lg mt-3 lg:mt-0 lg:ml-2">Start for free</button>
+            <button className="bg-transparent text-[#fbbf24] border-0 outline-0 h-10 w-full lg:w-28 rounded-lg mt-3 lg:mt-0 lg:ml-4 hover:bg-[#fbbf24] hover:text-black">Book a Demo</button>
           </div>
-          <div className="mt-1">
-            <p className="text-[#a0aec0] ml-11">No credit card Required</p>
-          </div>
-          <div>
-            <img className="sm:ml-10 mt-2 " src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fhp%2FProductHuntFirstLogo_aYBrOgLO-.png%3Ftr%3Doptimized&w=384&q=75" alt="" />
-          </div>
+          <p className="text-[#a0aec0] mt-2 lg:ml-11 text-center lg:text-left">No credit card required</p>
+          <img className="mx-auto lg:ml-10 mt-2" src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fhp%2FProductHuntFirstLogo_aYBrOgLO-.png%3Ftr%3Doptimized&w=384&q=75" alt="" />
         </div>
-        <div>
-          <img className=' hidden md:block sm:ml-44 mt-16  ' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fcmp%2Fcompanyoverview-100_H3k9nY9MST.webp%3Ftr%3Doptimized&w=640&q=75" alt="" />
+        <div className="hidden lg:block flex-1">
+          <img className="w-full mt-16 mx-auto" src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fstatic%2Fcmp%2Fcompanyoverview-100_H3k9nY9MST.webp%3Ftr%3Doptimized&w=640&q=75" alt="" />
         </div>
       </div>
-      {/* globe image */}
-      <div className='text-center mt-16 md:w-screen sm:w-[27rem] '>
-        <h1 className='md:text-4xl text-3xl font-bold font-serif'>Precise Phone Numbers. Promising Possibilities</h1>
-        <p className='text-xl font-serif mt-7  '>Find Accurate Phone Numbers of your Target Audience with Advanced Filters</p>
-        <img className='md:ml-72 sm:mt-5' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2FIndia_i8RzDrOIH.png%3FupdatedAt%3D1726752154807%3Ftr%3Doptimized&w=750&q=75" alt="" />
+
+      {/* Globe Section */}
+      <div className="text-center mt-16 w-full px-5">
+        <h1 className="text-3xl md:text-4xl font-bold font-serif">Precise Phone Numbers. Promising Possibilities</h1>
+        <p className="text-xl font-serif mt-7">Find Accurate Phone Numbers of your Target Audience with Advanced Filters</p>
+        <img className="w-full max-w-[750px] mt-5 mx-auto" src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2FIndia_i8RzDrOIH.png%3FupdatedAt%3D1726752154807%3Ftr%3Doptimized&w=750&q=75" alt="" />
       </div>
-      {/* /cards */}
+
+      {/* Cards Section */}
       <div className='sm:absolute sm:top-[70rem] sm:left-[48rem] w-auto hidden md:block'>
         <div className=" border-2 border-blue-600 rounded-xl mt-16 h-32 flex w-[38rem] bg-white">
           <div className='ml-5 border-l-4 border-blue-600 my-5 rounded'>
@@ -74,40 +71,43 @@ const Home = () => {
         </div>
         </div>
       </div>
-      <div className='absolute top-[76rem] -z-20 md:bg-gray-100 h-[78rem] md:w-screen '></div>
-      <div className=" border-2 border-red-600 rounded-xl md:mt-60 bg-white md:flex md:w-3/4 h-[55rem] md:ml-56 sm:ml-7 sm:w-80 md:h-[45rem] mt-32">
-        <div className='md:ml-32 mt-10 ml-5'>
-        <h1 className='font-bold md:text-4xl text-xl'>Indian Data Suite</h1>
-        <p className='text-blue-600 font-semibold md:text-2xl mt-3'>Unlock contacts, revenue and intel about any  <br />Indian companies instantly.</p>
-        <div className='md:w-80  text-blue-600 mt-8 flex flex-row md:flex md:flex-col'> 
-        <div className='w-56 h-16 md:w-80' >
-          <h1 className='text-lg md:text-2xl font-semibold  '>Company revenue and Intel</h1>
-          <p className='font-serif mt-4'>Use our advanced to find GST details, Paid-up capital, Industry, Location, Age, Size, Keywords, Financials and more.</p>
-        </div>
-          <div className='ml-1 w-56 h-16 md:w-80'>
-          <h1 className='md:text-2xl font-semibold md:mt-32  '>Smart Extension to find your Next Customer anywhere.</h1>
-          <p className='text-serif mt-4'>Access Contact Information directly from Zauba Corp, LinkedIn Profiles, and absolutely any website in the world</p>
+
+      {/* Indian Data Suite Section */}
+      <div className="bg-gray-100 w-full mt-2 px-5"></div>
+        <div className="flex flex-col lg:flex-row items-center bg-white border-2 border-red-600 rounded-xl max-w-5xl mx-auto p-4 lg:p-10 space-y-10 lg:space-y-0 lg:space-x-10 mt-28">
+          <div className="flex-1">
+            <h1 className="font-bold text-2xl lg:text-4xl">Indian Data Suite</h1>
+            <p className="text-blue-600 font-semibold text-lg lg:text-2xl mt-3">Unlock contacts, revenue, and intel about any Indian companies instantly.</p>
+            <div className="space-y-10 mt-8">
+              <div>
+                <h1 className="text-lg lg:text-2xl font-semibold">Company revenue and Intel</h1>
+                <p className="font-serif mt-4">Use our advanced tools to find GST details, Paid-up capital, Industry, Location, Age, Size, Keywords, Financials, and more.</p>
+              </div>
+              <div>
+                <h1 className="text-lg lg:text-2xl font-semibold">Smart Extension to find your Next Customer anywhere.</h1>
+                <p className="font-serif mt-4">Access Contact Information directly from Zauba Corp, LinkedIn Profiles, and absolutely any website in the world</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 space-y-5">
+            <div className="bg-blue-100 rounded-xl w-full h-72 lg:h-80">
+              <img className="w-full h-full object-contain pt-3" src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fids1_A1EMKFttn.png%3Ftr%3Doptimized&w=828&q=75" alt="" />
+            </div>
+            <div className="flex items-center justify-between bg-blue-50 rounded-3xl p-3">
+              <h1 className="text-gray-600 font-semibold">Explore access awaits</h1>
+              <button className="bg-black text-white rounded-2xl px-5 py-1">Secure Your Spot Now</button>
+            </div>
           </div>
         </div>
-        </div>
-        <div>
-       <div className='bg-blue-100 md:h-80 md:w-96 w-[20rem] sm:h-60  ml-5 mt-56 md:mt-48  rounded-xl '>
-          <img className='md:w-72 md:h-72 pt-3 md:ml-16 ml-16 h-56' src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fids1_A1EMKFttn.png%3Ftr%3Doptimized&w=828&q=75" alt="" />
-        </div>
-       <div className='flex bg-blue-50 md:w-96  rounded-3xl h-16 mt-10 md:ml-16 w-[20rem] ml-5'>
-       <div className='' >
-          <h1 className='md:ml-2 mt-4 text-gray-600 font-semibold text-sm'>Explore access awaits</h1>
-        </div>
-        <div className='bg-black md:w-48 w-[19vh]  h-8  rounded-2xl md:ml-6 md:mt-4 ml-12 mt-4'>
-          <h1 className='text-white ml-3 text-sm mt-1'>Secure Your Sport Now</h1>
-        </div>
-       </div>
-       </div>
+      
+
+      {/* Experience Section */}
+      <div className="flex justify-center mt-10">
+        <img className="h-48" src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Fzml%2FhomePageBanner%2FExperience_in_0uhq9utCV.png%3Ftr%3Doptimized&w=750&q=75" alt="" />
       </div>
-      <div className=' flex justify-center mr-16 md:ml-96'>
-        <img  className="h-48"src="https://zintlr.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fzintlr%2Flp%2Fzs%2Fpr_home%2Fdirection_zJ6ULSWI7.png%3Ftr%3Doptimized&w=384&q=75" alt="" />
-      </div>
-      <Pitch/>
+      
+      {/* Pitch Component */}
+      <Pitch />
     </div>
   );
 };
