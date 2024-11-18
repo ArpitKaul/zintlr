@@ -1,17 +1,17 @@
-import React, { useState,useEffect } from 'react';
-import { HashRouter, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 import Popup from '../popup/Popup';
-import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [menu, setmenu] = useState("");
-  const [isPopupOpen, setIsPopupOpen] = useState(false); // State for controlling popup visibility
+  const [menu, setMenu] = useState('');
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const location = useLocation(); // Use useLocation to get the current route
 
   useEffect(() => {
     const currentPath = location.pathname.split('/')[1];
-    setmenu(currentPath || "Home"); 
+    setMenu(currentPath || 'Home');
   }, [location]);
 
   const toggleSidebar = () => {
@@ -37,29 +37,29 @@ const Navbar = () => {
             alt="Logo"
           />
           <ul className="flex text-white ml-10 space-x-16">
-            <li onClick={() => setmenu("Home")} className="cursor-pointer hover:text-yellow-500">
+            <li onClick={() => setMenu('Home')} className="cursor-pointer hover:text-yellow-500">
               <Link to="/">Home</Link>
-              {menu === "Home" && <hr className="border-none rounded-md bg-[#ebc98c] w-10 h-1" />}
+              {menu === 'Home' && <hr className="border-none rounded-md bg-[#ebc98c] w-10 h-1" />}
             </li>
-            <li onClick={() => setmenu("Aboutus")} className="cursor-pointer hover:text-yellow-500">
+            <li onClick={() => setMenu('Aboutus')} className="cursor-pointer hover:text-yellow-500">
               <Link to="/Aboutus">About us</Link>
-              {menu === "Aboutus" && <hr className="border-none rounded-md bg-[#ebc98c] w-16 h-1" />}
+              {menu === 'Aboutus' && <hr className="border-none rounded-md bg-[#ebc98c] w-16 h-1" />}
             </li>
-            <li onClick={() => setmenu("Contact")} className="cursor-pointer hover:text-yellow-500">
-              <Link to='/Contact'>Contact Us</Link>
-              {menu === "Contact" && <hr className="border-none rounded-md bg-[#ebc98c] w-20 h-1" />}
+            <li onClick={() => setMenu('Contact')} className="cursor-pointer hover:text-yellow-500">
+              <Link to="/Contact">Contact Us</Link>
+              {menu === 'Contact' && <hr className="border-none rounded-md bg-[#ebc98c] w-20 h-1" />}
             </li>
-            <li onClick={() => setmenu("Data")} className="cursor-pointer hover:text-yellow-500">
+            <li onClick={() => setMenu('Data')} className="cursor-pointer hover:text-yellow-500">
               <Link to="/Data">Our Data</Link>
-              {menu === "Data" && <hr className="border-none rounded-md bg-[#ebc98c] w-16 h-1" />}
+              {menu === 'Data' && <hr className="border-none rounded-md bg-[#ebc98c] w-16 h-1" />}
             </li>
           </ul>
         </div>
         <div className="flex items-center mr-8">
           <button className="text-[#ebc98c] border-2 border-[#ebc98c] transition-all duration-300 w-20 h-8 rounded-md mr-4 hover:bg-[#ebc98c] hover:text-black">
-            <Link to='./Login'>Login</Link>
+            <Link to="./Login">Login</Link>
           </button>
-          <button onClick={openPopup} className="bg-[#ebc98c] text-black w-32 h-8 rounded-md ">
+          <button onClick={openPopup} className="bg-[#ebc98c] text-black w-32 h-8 rounded-md">
             Join the waitlist
           </button>
         </div>

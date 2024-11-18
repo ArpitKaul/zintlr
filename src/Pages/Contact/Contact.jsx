@@ -74,10 +74,18 @@ const Contact = () => {
                                 </div>
                                 <h2 className='text-xl font-semibold mt-4'>Connect with us and follow us on our social media pages.</h2>
                                 <div className='md:mt-6 flex cursor-pointer mt-10 md:ml-16'>
-                                    <img className='w-9 ml-1 rounded-xl' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgCeVF_mpx6Wd50ZWOZVn-nrOl-NJ9SYd-A&s" alt="Social Media 1" />
-                                    <img className='w-9 ml-3 rounded-xl' src="https://banner2.cleanpng.com/20180619/kyf/aa668hp3e.webp" alt="Social Media 2" />
-                                    <img className='w-9 ml-3 rounded-xl' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43HQpKFjAd-Ka_tLRdM37RKIsJMpEmh7Wgw&s" alt="Social Media 3" />
-                                    <img className='ml-3 w-9 rounded-xl' src="https://w7.pngwing.com/pngs/877/705/png-transparent-instagram-photo-picture-social-brands-and-logos-icon.png" alt="Instagram" />
+                                <a href="https://twitter.com/ZintlrHQ">
+                                 <img className="w-9 rounded-xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgCeVF_mpx6Wd50ZWOZVn-nrOl-NJ9SYd-A&s" alt="Twitter" />
+                                 </a>
+                                 <a href="https://www.linkedin.com/company/zintlr/">
+                                 <img className="w-9 rounded-xl" src="https://banner2.cleanpng.com/20180619/kyf/aa668hp3e.webp" alt="LinkedIn" />
+                                 </a>
+                                 <a href="https://m.facebook.com/100089859531116/">
+                                 <img className="w-9 rounded-xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43HQpKFjAd-Ka_tLRdM37RKIsJMpEmh7Wgw&s" alt="Facebook" />
+                                 </a>
+                                <a href="https://www.instagram.com/zintlrhq/">
+                                <img className="w-9 rounded-xl" src="https://w7.pngwing.com/pngs/877/705/png-transparent-instagram-photo-picture-social-brands-and-logos-icon.png" alt="Instagram" />
+                                 </a>
                                 </div>
                             </div>
                         </div>
